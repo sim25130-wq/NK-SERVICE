@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши работы — NK-Service, мастерская Николая в Можайске</title>
+    <meta name="description" content="Примеры кузовных работ мастерской Николая в Можайске. Более 2000 восстановленных автомобилей. Ремонтируем так, чтобы советовали друзьям.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__icon">🔧</span>
+                <div class="logo__text-wrap">
+                    <span class="logo__text">NK-<span class="accent">Service</span></span>
+                    <span class="logo__sub">мастерская Николая</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="services.html" class="nav__link">Услуги</a>
+                <a href="portfolio.html" class="nav__link nav__link--active">Наши работы</a>
+                <a href="contacts.html" class="nav__link">Контакты</a>
+            </nav>
+            <a href="tel:+79991234567" class="btn btn--phone">📞 +7 (999) 123-45-67</a>
+            <button class="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="section__label">Портфолио</span>
+                <h1 class="page-header__title">Примеры <span class="accent">наших работ</span></h1>
+                <p class="page-header__subtitle">Более 2000 успешно восстановленных автомобилей за 15 лет работы моей мастерской</p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio__filters">
+                    <button class="filter-btn filter-btn--active" data-filter="all">Все работы</button>
+                    <button class="filter-btn" data-filter="repair">После ДТП</button>
+                    <button class="filter-btn" data-filter="paint">Покраска</button>
+                    <button class="filter-btn" data-filter="polish">Полировка</button>
+                    <button class="filter-btn" data-filter="weld">Сварка</button>
+                </div>
+
+                <div class="portfolio__grid">
+                    
+                    <!-- Работа 1: BMW X5 -->
+                    <div class="portfolio__item" data-category="repair">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/audi-before.jpg" alt="Классная Ауди Q7 до ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/audi-after.jpg" alt="Она же после ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Ауди ремонт арки</h3>
+                            <p>Рихтовка, замена, покраска</p>
+                            <span class="portfolio__tag">После ДТП</span>
+                        </div>
+                    </div>
+
+                    <!-- Работа 2: Mercedes C-Class -->
+                    <div class="portfolio__item" data-category="paint">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/mercedes-c-before.jpg" alt="Mercedes C-Class до покраски" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/mercedes-c-after.jpg" alt="Mercedes C-Class после покраски" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Mercedes-Benz C-Class — полная покраска</h3>
+                            <p>Смена цвета с серебристого на красный</p>
+                            <span class="portfolio__tag">Покраска</span>
+                        </div>
+                    </div>
+
+                    <!-- Работа 3: Audi A6 -->
+                    <div class="portfolio__item" data-category="polish">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/audi-a6-before.jpg" alt="Audi A6 до полировки" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/audi-a6-after.jpg" alt="Audi A6 после полировки" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Audi A6 — восстановительная полировка</h3>
+                            <p>Удаление царапин, восстановление блеска</p>
+                            <span class="portfolio__tag">Полировка</span>
+                        </div>
+                    </div>
+
+                    <!-- Работа 4: VW Passat -->
+                    <div class="portfolio__item" data-category="weld">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/vw-passat-before.jpg" alt="Volkswagen Passat до ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/vw-passat-after.jpg" alt="Volkswagen Passat после ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Volkswagen Passat — замена порогов</h3>
+                            <p>Сварочные работы, антикор обработка</p>
+                            <span class="portfolio__tag">Сварка</span>
+                        </div>
+                    </div>
+
+                    <!-- Работа 5: Toyota Camry -->
+                    <div class="portfolio__item" data-category="repair">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/toyota-camry-before.jpg" alt="Toyota Camry до ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/toyota-camry-after.jpg" alt="Toyota Camry после ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Toyota Camry — ремонт бампера</h3>
+                            <p>Восстановление пластика, покраска</p>
+                            <span class="portfolio__tag">После ДТП</span>
+                        </div>
+                    </div>
+
+                    <!-- Работа 6: Kia Sportage -->
+                    <div class="portfolio__item" data-category="paint">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/kia-sportage-before.jpg" alt="Kia Sportage до покраски" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/kia-sportage-after.jpg" alt="Kia Sportage после покраски" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Kia Sportage — локальная покраска</h3>
+                            <p>Покраска капота и крыла</p>
+                            <span class="portfolio__tag">Покраска</span>
+                        </div>
+                    </div>
+
+                    <!-- Работа 7: Lexus RX -->
+                    <div class="portfolio__item" data-category="polish">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/lexus-rx-before.jpg" alt="Lexus RX до полировки" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/lexus-rx-after.jpg" alt="Lexus RX после полировки" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Lexus RX — полировка + керамика</h3>
+                            <p>Защитное керамическое покрытие</p>
+                            <span class="portfolio__tag">Полировка</span>
+                        </div>
+                    </div>
+
+                    <!-- Работа 8: Ford Focus -->
+                    <div class="portfolio__item" data-category="weld">
+                        <div class="portfolio__compare">
+                            <div class="portfolio__photo">
+                                <img src="images/ford-focus-before.jpg" alt="Ford Focus до ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--before">ДО</span>
+                            </div>
+                            <div class="portfolio__photo">
+                                <img src="images/ford-focus-after.jpg" alt="Ford Focus после ремонта" loading="lazy">
+                                <span class="portfolio__label portfolio__label--after">ПОСЛЕ</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <h3>Ford Focus — восстановление днища</h3>
+                            <p>Сварка, антикор, покраска</p>
+                            <span class="portfolio__tag">Сварка</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <div class="logo">
+                    <span class="logo__icon">🔧</span>
+                    <div class="logo__text-wrap">
+                        <span class="logo__text">NK-<span class="accent">Service</span></span>
+                        <span class="logo__sub">мастерская Николая</span>
+                    </div>
+                </div>
+                <p class="footer__text">Ремонтируем так, чтобы советовали друзьям</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <a href="index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="portfolio.html">Наши работы</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <p>📞 +7 (999) 123-45-67</p>
+                <p>✉️ info@nk-service.ru</p>
+                <p>📍 г. Можайск, дальше хер помню</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">© 2026 NK-Service — мастерская Николая. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

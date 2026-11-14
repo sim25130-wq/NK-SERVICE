@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — NK-Service, мастерская Николая в Можайске</title>
+    <meta name="description" content="Свяжитесь с Николаем напрямую. Запись на кузовной ремонт в Можайске, консультация, оценка стоимости. Ремонтируем так, чтобы советовали друзьям.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__icon">🔧</span>
+                <div class="logo__text-wrap">
+                    <span class="logo__text">NK-<span class="accent">Service</span></span>
+                    <span class="logo__sub">мастерская Николая</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="services.html" class="nav__link">Услуги</a>
+                <a href="portfolio.html" class="nav__link">Наши работы</a>
+                <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+            </nav>
+            <a href="tel:+79991234567" class="btn btn--phone">📞 +7 (999) 123-45-67</a>
+            <button class="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="section__label">Свяжитесь со мной</span>
+                <h1 class="page-header__title">Наши <span class="accent">контакты</span></h1>
+                <p class="page-header__subtitle">Звоните, пишите или приезжайте в мастерскую — я лично отвечу на все ваши вопросы</p>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__grid">
+                    <div class="contacts__info">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📍</div>
+                            <div>
+                                <h3>Адрес мастерской</h3>
+                                <p>г. Можайск<br>дальше хер помню — позвоните, расскажу как проехать 😄</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📞</div>
+                            <div>
+                                <h3>Телефон Николая</h3>
+                                <p><a href="tel:+79991234567">+7 (999) 123-45-67</a> — основной</p>
+                                <p><a href="tel:+79997654321">+7 (999) 765-43-21</a> — для записи</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">✉️</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@nk-service.ru">info@nk-service.ru</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">🕐</div>
+                            <div>
+                                <h3>Режим работы</h3>
+                                <p>Пн–Пт: 9:00 – 20:00<br>Сб–Вс: 10:00 – 18:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">💬</div>
+                            <div>
+                                <h3>Мессенджеры</h3>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">WhatsApp</a>
+                                    <a href="#" class="social-link">Telegram</a>
+                                    <a href="#" class="social-link">Viber</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <h2 class="contact-form__title">Оставить заявку Николаю</h2>
+                        <p class="contact-form__subtitle">Заполните форму — я лично перезвоню в течение 15 минут</p>
+                        
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="car">Марка и модель авто</label>
+                            <input type="text" id="car" name="car" placeholder="Например: BMW X5 2018">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Интересующая услуга</label>
+                            <select id="service" name="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="repair">Рихтовка кузова</option>
+                                <option value="paint">Покраска</option>
+                                <option value="polish">Полировка</option>
+                                <option value="protection">Защитные покрытия</option>
+                                <option value="accident">Ремонт после ДТП</option>
+                                <option value="weld">Сварочные работы</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Комментарий</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Опишите проблему или задайте вопрос"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                    </form>
+                </div>
+
+                <div class="map">
+                    <div class="map__placeholder">
+                        <span>🗺️</span>
+                        <p>Здесь будет карта с расположением мастерской</p>
+                        <small>г. Можайск, дальше хер помню — позвоните, подскажу как проехать</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <div class="logo">
+                    <span class="logo__icon">🔧</span>
+                    <div class="logo__text-wrap">
+                        <span class="logo__text">NK-<span class="accent">Service</span></span>
+                        <span class="logo__sub">мастерская Николая</span>
+                    </div>
+                </div>
+                <p class="footer__text">Ремонтируем так, чтобы советовали друзьям</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <a href="index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="portfolio.html">Наши работы</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <p>📞 +7 (999) 123-45-67</p>
+                <p>✉️ info@nk-service.ru</p>
+                <p>📍 г. Можайск, дальше хер помню</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">© 2026 NK-Service — мастерская Николая. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
